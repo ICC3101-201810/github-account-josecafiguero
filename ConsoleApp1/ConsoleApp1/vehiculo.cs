@@ -6,18 +6,99 @@ using System.Threading.Tasks;
 
 namespace ConsoleApp1
 {
-    class vehiculo
+    public abstract class Vehiculo
     {
-        public string Auto, Acuatico, Moto, Camion, Bus, MaquinariaP;
-        public vehiculo(string auto, string acuatico, string moto, string camion, string bus , string maquinariap)
+        public string Patente, Color, Tipo;
+        public Vehiculo(string Patente, string Color, string Tipo)
         {
-            this.Auto = auto;
-            this.Acuatico = acuatico;
-            this.Moto = moto;
-            this.Camion = camion;
-            this.Bus= bus:
-            this.MaquinariaP=maquinariap
+            this.Patente = Patente;
+            this.Color = Color;
+            this.Tipo = Tipo;
+
         }
-          
+
     }
-}
+
+    public class Auto : Vehiculo
+    {
+        public string Marca, Modelo;
+        public int Año;
+        public Auto(string Patente, string Color, string Tipo, string Marca, string Modelo, int Año)
+            : base(Patente, Color, Tipo)
+        {
+            this.Marca = Marca;
+            this.Modelo = Modelo;
+            this.Año = Año;
+        }
+
+
+    }
+    public class Acuatico : Vehiculo
+    {
+        public string Marca, Modelo;
+        public int Año;
+        public Acuatico(string Patente, string Color, string Tipo, string Marca, string Modelo, int Año)
+            : base(Patente, Color, Tipo)
+        {
+            this.Marca = Marca;
+            this.Modelo = Modelo;
+            this.Año = Año;
+        }
+
+    }
+    public class Moto : Vehiculo
+    {
+        public string Marca, Modelo;
+        public int Año;
+        public Moto(string Patente, string Color, string Tipo, string Marca, string Modelo, int Año)
+            : base(Patente, Color, Tipo)
+        {   
+            this.Marca = Marca;
+            this.Modelo = Modelo;
+            this.Año = Año;
+        }
+
+    }
+    public class Camion : Vehiculo
+    {
+        public string Marca, Modelo;
+        public int Año;
+        public Camion(string Patente, string Color, string Tipo,string Marca, string Modelo, int Año)
+            : base(Patente, Color, Tipo)
+        {
+            
+            this.Marca = Marca;
+            this.Modelo = Modelo;
+            this.Año = Año;
+        }
+
+    }
+    public class Bus : Vehiculo
+    {
+        public string Marca, Modelo;
+        public int Año;
+        public Bus(string Patente, string Color, string Tipo,string Marca, string Modelo, int Año)
+            : base(Patente, Color, Tipo)
+        {
+            this.Marca = Marca;
+            this.Modelo = Modelo;
+            this.Año = Año;
+        }
+
+    }
+    public class MaquinariaPesada : Vehiculo
+    {
+        public string Marca, Modelo, Maquina;
+        public int Año;
+        public MaquinariaPesada(string Patente, string Color, string Tipo, string Marca, string Modelo,string Maquina, int Año)
+             : base(Patente, Color, Tipo)
+        {
+            this.Maquina = Maquina;
+            this.Marca = Marca;
+            this.Modelo = Modelo;
+            this.Año = Año;
+
+        }
+
+    }
+}   
