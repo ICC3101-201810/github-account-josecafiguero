@@ -33,12 +33,7 @@ namespace ConsoleApp1
 
 
         }
-        public void AgregarPersona()
-        {
-            Console.WriteLine("ingrese rut,nombre,telefono,email,edad,claselicencia,sexo.");
-            Console.ReadLine()#mejoraresto
-            
-        }
+        
     }
     public class Empresa : Cliente
     {
@@ -52,12 +47,7 @@ namespace ConsoleApp1
             this.Autorizacion = autorización;
 
         }
-        public void AgregarPersona()
-        {
-            Console.WriteLine("ingrese rut,nombre,telefono,email,rubro,autorización.");
-            Console.ReadLine()#mejoraresto
-            
-        }
+        
     }
 
     public class Organizacion : Cliente
@@ -72,12 +62,7 @@ namespace ConsoleApp1
             this.Autorizacion = autorización;
 
         }
-        public void AgregarPersona()
-        {
-            Console.WriteLine("ingrese rut,nombre,telefono,email,rubro,autorización.");
-            Console.ReadLine()#mejoraresto
-            
-        }
+       
     }
     public class Institucion : Cliente
     {
@@ -91,11 +76,6 @@ namespace ConsoleApp1
             this.Autorizacion = autorización;
 
         }
-        public void AgregarPersona()
-        {
-            Console.WriteLine("ingrese rut,nombre,telefono,email,rubro,autorización.");
-            Console.ReadLine()#mejoraresto
-            
-        }
+       
     }
 }
